@@ -7,58 +7,63 @@
     <meta name="theme-color" content="hsl(273, 75%, 66%)">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>FAQ Accordion card</title>
 </head>
 <body>
     <div class="container">
         <div class="img-container">
-            <img src="images/illustration-woman-online-mobile.svg" alt="Image">
-            <img src="images/bg-pattern-mobile.svg" alt="Shadow">
+            <img class="img" src="images/illustration-woman-online-mobile.svg" alt="Image">
+            <!-- Made 3 shadows for better visibility -->
+            <img class="shadow" src="images/bg-pattern-mobile.svg" alt="Shadow">
+            <img class="shadow" src="images/bg-pattern-mobile.svg" alt="Shadow">
+            <img class="shadow" src="images/bg-pattern-mobile.svg" alt="Shadow">
         </div>
+        <h1 class="heading">FAQ</h1>
         <div class="faq-container">
-            <div class="question q1">
+            <div class="question q1 hide">
                 <label for="question" class="q-label">
-                    <h1>How many team members can I invite?</h1>
-                    <img src="images/icon-arrow-down.svg" alt="Arrow">
+                    <h3 class="q-heading" >How many team members can I invite?</h3>
+                    <img  class="q-img" src="images/icon-arrow-down.svg" alt="Arrow">
                 </label>
                 <div class="panel">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non praesentium officiis quae, illo qui dolore!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ducimus!</p>
                 </div>
             </div>
-            <div class="question q2">
+            <div class="question q2 show">
                 <label for="question" class="q-label">
-                    <h1>What is the maximum file upload size?</h1>
-                    <img src="images/icon-arrow-down.svg" alt="Arrow">
+                    <h3 class="q-heading" >What is the maximum file upload size?</h3>
+                    <img  class="q-img" src="images/icon-arrow-down.svg" alt="Arrow">
                 </label>
                 <div class="panel">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non praesentium officiis quae, illo qui dolore!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ducimus!</p>
                 </div>
             </div>
-            <div class="question q3">
+            <div class="question q3 hide">
                 <label for="question" class="q-label">
-                    <h1>How do I reset my password?</h1>
-                    <img src="images/icon-arrow-down.svg" alt="Arrow">
+                    <h3 class="q-heading" >How do I reset my password?</h3>
+                    <img  class="q-img" src="images/icon-arrow-down.svg" alt="Arrow">
                 </label>
                 <div class="panel">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non praesentium officiis quae, illo qui dolore!</p>
+                    <pLorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ducimus!!</p>
                 </div>
             </div>
-            <div class="question q4">
+            <div class="question q4 hide">
                 <label for="question" class="q-label">
-                    <h1>Can I cancel my subscription?</h1>
-                    <img src="images/icon-arrow-down.svg" alt="Arrow">
+                    <h3 class="q-heading" >Can I cancel my subscription?</h3>
+                    <img  class="q-img" src="images/icon-arrow-down.svg" alt="Arrow">
                 </label>
                 <div class="panel">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non praesentium officiis quae, illo qui dolore!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ducimus!</p>
                 </div>
             </div>
-            <div class="question q5">
+            <div class="question q5 hide">
                 <label for="question" class="q-label">
-                    <h1>Do you provide additional support?</h1>
-                    <img src="images/icon-arrow-down.svg" alt="Arrow">
+                    <h3 class="q-heading" >Do you provide additional support?</h3>
+                    <img  class="q-img" src="images/icon-arrow-down.svg" alt="Arrow">
                 </label>
                 <div class="panel">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non praesentium officiis quae, illo qui dolore!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ducimus!</p>
                 </div>
             </div>
         </div>
