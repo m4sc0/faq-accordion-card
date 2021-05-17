@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
     <title>FAQ Accordion card</title>
 </head>
 <body>
@@ -21,8 +22,8 @@
         </div>
         <h1 class="heading">FAQ</h1>
         <div class="faq-container">
-            <div class="question q1 hide">
-                <label for="question" class="q-label">
+            <div class="question q1 hide" id="q1">
+                <label for="question" class="q-label"  onclick="toggle(1)">
                     <h3 class="q-heading" >How many team members can I invite?</h3>
                     <img  class="q-img" src="images/icon-arrow-down.svg" alt="Arrow">
                 </label>
@@ -30,8 +31,8 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ducimus!</p>
                 </div>
             </div>
-            <div class="question q2 show">
-                <label for="question" class="q-label">
+            <div class="question q2 show" id="q2">
+                <label for="question" class="q-label" onclick="toggle(2)">
                     <h3 class="q-heading" >What is the maximum file upload size?</h3>
                     <img  class="q-img" src="images/icon-arrow-down.svg" alt="Arrow">
                 </label>
@@ -39,17 +40,17 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ducimus!</p>
                 </div>
             </div>
-            <div class="question q3 hide">
-                <label for="question" class="q-label">
+            <div class="question q3 hide" id="q3">
+                <label for="question" class="q-label" onclick="toggle(3)">
                     <h3 class="q-heading" >How do I reset my password?</h3>
                     <img  class="q-img" src="images/icon-arrow-down.svg" alt="Arrow">
                 </label>
                 <div class="panel">
-                    <pLorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ducimus!!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ducimus!</p>
                 </div>
             </div>
-            <div class="question q4 hide">
-                <label for="question" class="q-label">
+            <div class="question q4 hide" id="q4">
+                <label for="question" class="q-label" onclick="toggle(4)">
                     <h3 class="q-heading" >Can I cancel my subscription?</h3>
                     <img  class="q-img" src="images/icon-arrow-down.svg" alt="Arrow">
                 </label>
@@ -57,8 +58,8 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ducimus!</p>
                 </div>
             </div>
-            <div class="question q5 hide">
-                <label for="question" class="q-label">
+            <div class="question q5 hide" id="q5">
+                <label for="question" class="q-label" onclick="toggle(5)">
                     <h3 class="q-heading" >Do you provide additional support?</h3>
                     <img  class="q-img" src="images/icon-arrow-down.svg" alt="Arrow">
                 </label>
