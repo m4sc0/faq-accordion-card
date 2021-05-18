@@ -30,12 +30,16 @@ body {
     flex-wrap: wrap;
     align-items: center;
 }
+.img-container .box {
+    display: none;
+}
 .img-container .img {
+    background: url(images/illustration-woman-online-mobile.svg) no-repeat cover;
     margin-left: -15px;
     margin-right: 27px;
     margin-top: -128px;
     margin-bottom: 45px;
-    z-index: 5;
+    z-index: 3;
 }
 .img-container .shadow {
     position: absolute;
@@ -53,10 +57,12 @@ body {
 }
 .question {
     padding: 1.25rem;
+    line-height: 7.5px;
 }
 .question .q-img {
     margin-top: -10px;
     float: right;
+    transition: .4s ease-in-out;
 }
 .question.hide .q-heading {
     font-weight: 400;
@@ -77,4 +83,72 @@ body {
 }
 .question.show .q-img {
     transform: rotate(180deg);
+}
+.question::after {
+    content: '';
+    display: inline-block;
+    height: 2px;
+    vertical-align: bottom;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: -20px;
+    border-top: 2px solid hsl(240, 5%, 91%);
+}
+#box {
+    display: none;
+}
+
+@media (min-width: 375px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 60%;
+        overflow: hidden;
+    }
+    .img-container {
+        width: 50%;
+        height: auto;
+        margin-left: -50px;
+    }
+    .img-container .img {
+        background: url(images/illustration-box-desktop.svg) no-repeat cover;
+        width: 90%;
+        margin-top: 25px;
+        margin-left: -95px;
+    }
+    .img-container .shadow {
+        background: url(images/bg-pattern-desktop.svg) no-repeat cover;
+        width: 43%;
+        margin-left: -80px;
+    }
+    #box {
+        display: block;
+        width: 200px;
+        height: auto;
+        position: absolute;
+        top: 54%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+    }
+    .heading {
+        height: 30px;
+        margin-top: 100px;
+    }
+    .faq-container {
+        margin-top: 200px;
+    }
+    .question {
+        margin: 0 87.5px 0 -87.5px;
+    }
+    .q-heading:hover {
+        cursor: pointer;
+        color: hsl(14, 88%, 65%);
+        transition: .2s ease-in-out;
+    }
+    #box.yes {
+        left: 18%;
+    }
 }
